@@ -1,0 +1,124 @@
+
+/* paramètres généreaux  ==> En utilisant ce code, on s'assure d'éliminer les marges et les rembourrages par défaut des éléments de la page, */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif ;
+}
+
+
+
+
+
+ /* image de fond  */
+.container{
+    width: 100% ; 
+    height: 100vh;  /* VH ==> viewport height */
+    background-image: url(images/leaves-4597501_640.jpg); /*  photo arrière plan  */
+    background-size: cover; /*(sans ce code l'img est placé plusieur fois en fond ) couvre entièrement l'élément conteneur, */
+    /* background-position: center;  */
+    /* les ligne suivantes permettent de center la carte  */
+    display:flex; /*pour rendre flexible le container et les elements qu'il contient*/
+    align-items: center; /*centre vertic r;/*centre horizonatalement*/
+}
+
+
+
+
+
+
+
+
+/* css de la carte dont son backgroun, ma picture, logo git et link */
+.carte{
+    background: rgba(91, 8, 3, 0.8);
+    text-align:center;
+    padding: 40px 90px; /* hauteur et largeure de la C*/
+    color:black;
+     position:relative;/* permet de modifier le positionment grâce au top, bottom, right ... */
+    border-radius: 20px;
+}
+.my-picture{
+    width: 140px;
+    border-radius:40% ;
+    background: black;
+    padding: 4px; /* expace entre la photo et l'encadré en noir  (voir tt en bas pour + d'infos) */
+
+}
+   
+.linkedin-icon{
+    width: 30px;
+    position:absolute;
+    left: 20px;
+    top: 40px;
+}  
+
+.thegithub-icon{
+    width: 30px;
+    position:absolute;
+    left: 50px;
+    top: 40px;
+}
+
+
+
+
+
+/* bouton "contactez-moi"  */
+.bouton{
+text-decoration: none; /* sans ça "conctez-moi" est souligner*/
+display:inline-block;
+font-size: 20px;
+font-weight: 700;
+background:rgb(183, 148, 83); 
+color: rgb(167, 47, 4);
+padding:10px 30px;
+border-radius: 30px;
+margin: 30px 0 10px;
+transition: 1s;
+
+}
+
+.bouton:hover{
+    background: black; 
+}
+
+
+.vous-joindre{
+    background:black;
+    border-radius: 20px;
+    padding: 30px ; /*espace entre texte et case  */
+    margin-right: -90px; 
+    margin-left: -90px;
+    margin-bottom: -10px;
+    margin-top:1px ;
+}
+.vous-joindre p{ 
+    color: rgb(183, 148, 83);
+}
+.liste{
+    text-align: left;
+    padding-left: 150px;
+    color:rgb(183, 148, 83);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Un élément positionné de manière absolue est retiré du flux normal du document, ce qui signifie qu'il ne prendra pas de place dans le flux et que les autres éléments ne tiendront pas compte de lui lors de leur positionnement.
+L'élément positionné de manière absolue peut se superposer à d'autres éléments, ce qui lui permet d'être placé précisément sur la page, indépendamment du flux normal.
+Si aucun ancêtre positionné n'est trouvé, l'élément positionné de manière absolue sera positionné par rapport au corps de la page (ou l'élément racine).
+En résumé, la position "relative" ajuste la position de l'élément par rapport à sa position normale, tandis que la position "absolute" positionne l'élément de manière absolue par rapport à son premier ancêtre positionné. */
