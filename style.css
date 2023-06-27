@@ -16,7 +16,7 @@
     width: 100% ; 
     height: 100vh;  /* VH ==> viewport height */
     background-image: url(images/leaves-4597501_640.jpg); /*  photo arrière plan  */
-    background-size: cover; /*(sans ce code l'img est placé plusieur fois en fond ) couvre entièrement l'élément conteneur, */
+   /* background-size: cover; (sans ce code l'img est placé plusieur fois en fond ) couvre entièrement l'élément conteneur, */
     /* background-position: center;  */
     /* les ligne suivantes permettent de center la carte  */
     display:flex; /*pour rendre flexible le container et les elements qu'il contient*/
@@ -68,7 +68,7 @@
 
 /* bouton "contactez-moi"  */
 .bouton{
-text-decoration: none; /* sans ça "conctez-moi" est souligner*/
+/* text-decoration: none;  sans ça "conctez-moi" est souligner*/
 display:inline-block;
 font-size: 20px;
 font-weight: 700;
