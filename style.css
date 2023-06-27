@@ -38,6 +38,7 @@
     color:black;
      position:relative;/* permet de modifier le positionment grâce au top, bottom, right ... */
     border-radius: 20px;
+    left: 450px;
 }
 .my-picture{
     width: 140px;
